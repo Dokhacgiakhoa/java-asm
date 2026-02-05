@@ -24,6 +24,15 @@ public class Main {
 
                 ds.add(new Item(id, ten, giaTri));
                 System.out.println("Đã thêm thành công!");
+                // Trong vòng lặp while của Main.java
+            if (chon == 2) {
+                    // Chức năng 2: Tính tổng giá trị trong danh sách
+                    double tong = 0;
+                    for (Item item : ds) {
+                        tong += item.getValue();
+                    }
+                    System.out.println("TỔNG GIÁ TRỊ TRONG DANH SÁCH LÀ: " + tong);
+                }
             } else if (chon == 0) break;
         }
     }
